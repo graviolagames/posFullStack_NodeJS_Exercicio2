@@ -7,6 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/hello/:firstName/:lastName', function(req, res, next) {
+      console.log("[DEBUG]- GET/hello ");
       res.render('hello', {
       firstName: req.params.firstName,
       lastName: req.params.lastName

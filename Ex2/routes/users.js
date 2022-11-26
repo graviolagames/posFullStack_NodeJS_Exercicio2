@@ -21,7 +21,7 @@ router.delete('/', function(req, res, next) {
   let foundIndex;
   let found = users.itens.find(function(user,index){
     foundIndex = index;
-    return user.name == email;
+    return user.email == email;
   });
   if(found){
     users.itens.splice(foundIndex,1);
